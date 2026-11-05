@@ -8,6 +8,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Listar arquivos (Verificação)
+        run: ls -la
+
       - name: Build with Buildozer
         uses: ArtemSBulgakov/buildozer-action@v1
         id: buildozer
